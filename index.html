@@ -1,95 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СГУ Рассписание</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СГУ Рассписание</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class=" bg-light">
-    <main>
-      <header class="d-flex justify-content-center bg-dark">
-        <ul class="nav nav-pills">
-          <li class="nav-item bg-light"><a href="#" class="nav-link link-dark" aria-current="page">Главная</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-light">Экзамены</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-light">Вход</a></li>
-        </ul>
-      </header>
-        <div class="row">
-          <div class="col"></div>
-            <div class="col ">
-                <div class="card">
-                    <form onsubmit="event.preventDefault()" class="box">
-                        <h1>Вход</h1>
-                        <p class="text-muted">Введите лоигн и пароль</p> 
-                        <input type="text" name="" placeholder="Логин">
-                        <input type="password" name="" placeholder="Пароль">
-                        <input type="submit" name="" value="Войти" href="#">
-                    </form>
+<body class="bg-light">
+    <header class="navbar row fixed-top navbar-expand bg-dark d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-5">
+      <div class="col mb-2"></div>
+      <ul class="nav col-4 col-md-auto justify-content-center">
+        <li class="bg-light"><a href="index.html" class="nav-link link-dark">Занятия</a></li>
+        <li><a href="#" class="nav-link px-2 text-muted">Экзамены</a></li>
+        <li><a href="adm.html" class="nav-link px-2 text-muted">Вход</a></li>
+      </ul>
+      <div class="col-1 mb-2"></div>
+      <ul class="nav col-2 col-md-auto justify-content-center">
+        <li class="bg-light"><a href="#" class="nav-link link-dark">Верхняя неделя</a></li>
+      </ul>
+      <div class="col mb-2"></div>
+    </header>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<main class="container bg-light pt-5 mb-5" >
+  <!-- Рассписание на день -->
+  <div class="p-5 mt-5 text-start bg-white border rounded-3 row">
+    <div class="col-4">
+      <h1 class="display-3">21-Пи-1</h1>
+    </div>
+    <div class="col text-end">
+      <h2 class="display-6">Прикладная Информатика в экономике</h2>
+    </div>
+    <div class="accordion accordion-flush">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <h3 class="border-bottom">Фильтр</h3>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <h5 class="text-muted py-3">Неделя</h5>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Текущая неделя
+                  </label>
                 </div>
-            </div>
-            <div class="col"></div>
-          </div>
-    <!--<section class="vh-100">
-        <div class="container h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col">
-              <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-      
-                  <h3 class="mb-5">Sign in</h3>
-      
-                  <div class="form-outline mb-4">
-                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email"/>
-                  </div>
-      
-                  <div class="form-outline mb-4">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password"/>
-                  </div>    
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Обе недели
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Верхняя неделя
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Нижняя неделя
+                  </label>
                 </div>
               </div>
             </div>
+            <br>
+            <h5 class="text-muted py-3">Подгруппа</h5>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Все подугруппы
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Первая подгруппа
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Вторая подгруппа
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Третья подгруппа
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <button type="button" class="btn btn-lg btn-outline-dark">Применить</button>
+            </div>
           </div>
         </div>
-      </section>
-      <br>
-      <div class="text-center">
-        <div class="form-signin">
-          <form>
-            <h1 class="h3 mb-3 fw-normal">Вход</h1>
-        
-            <div class="form-floating mt-2">
-              <input type="email" class="form-control" id="floatingInput" placeholder="Логин">
-              <label for="floatingInput">Логин</label>
-            </div>
-            <div class="form-floating mt-2">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Пароль">
-              <label for="floatingPassword">Пароль</label>
-            </div>
-        
-            <button class="w-100 btn btn-lg btn-primary mt-2" type="submit">Войти</button>
-          </form>
-        </div>
-      </div>-->
-      <div style="min-height: 750px;">
-        <p>1</p>
       </div>
-
-    </main>
-    <footer class="page-footer font-small text-white" style="background-color: #212529;">
-
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2022 Copyright:
-        <a href="/">«Собрание»</a>
+    </div>
+  </div>
+  <div class="p-5 mt-5 bg-white text-start border rounded-3">
+    <div class="container-fluid row">
+      <div class="col"><h1 class="display-5 fw-bold text-start">Понедельник</h1>
+        <h2 class="text-muted">29 Марта</h2>
       </div>
-      <!-- Copyright -->
-    
-    </footer>
+      <div class="col py-3">
+        <h2 class="text-end">Верхняя Неделя</h2>
+      </div>
+    </div>
+    <div class="container-fluid py-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><h3>№ Пары</h3></th>
+            <th scope="col"><h3>Предмет</h3></th>
+            <th scope="col"><h3>Преподователь</h3></th>
+            <th scope="col"><h3>Место</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <h4>1 Пара</h4>
+              <h5>8:00-9:30</h5>
+            </th>
+            <td>
+              <h2>Математика</h2><h4 class="text-muted">Практика</h4>
+            </td>
+            <td>
+              <h3>доц. Улитина Е.И.</h3>
+            </td>
+            <td>
+              <h5>ул.Политехническая, 7, ауд. 308</h5>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <h4>2 Пара</h4>
+              <h5>9:40-11:10</h5>
+            </th>
+            <td>
+              <h2>Математика</h2><h4 class="text-muted">Лекция</h4>
+            </td>
+            <td>
+              <h3>доц. Улитина Е.И.</h3>
+            </td>
+            <td>
+              <h5>ул.Политехническая, 7, ауд. 308</h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Рассписание на день -->
+  <div class="p-5 mt-5 bg-white text-start border rounded-3">
+    <h1 class="display-5 fw-bold text-start">Вторник</h1>
+    <h2 class="display-6 text-center">Экзамен</h2>
+    <div class="container-fluid py-5 text-center">
+      <h1 >Теория систем и системный анализ</h1>
+      <h2 class="display-6 text-muted">Видищева Е.В.</h2>
+      <h3 class="display-6 text-muted">11:00</h3>
+      <h4 class="display-6 text-muted">ул.Политехническая, 7, ауд. 313</h4>
+    </div>
+  </div>
+  <div class="p-5 mt-5 text-start border rounded-3">
+    <h1 class="display-5 fw-bold text-start">Среда</h1>
+    <div class="container-fluid py-5">
+      <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+    </div>
+  </div>
+  <div class="p-5 mt-5 text-start border rounded-3">
+    <h1 class="display-5 fw-bold text-start">Четверг</h1>
+    <div class="container-fluid py-5">
+      <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+    </div>
+  </div>
+  <div class="p-5 mt-5 text-start border rounded-3">
+    <h1 class="display-5 fw-bold text-start">Пятница</h1>
+    <div class="container-fluid py-5">
+      <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+    </div>
+  </div>
+</main>
+  <!-- Copyright -->  
+  <footer class="page-footer font-small text-white" style="background-color: #212529;">
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="/">«Собрание»</a>
+    </div>
+  </footer>
+  <!-- Copyright -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

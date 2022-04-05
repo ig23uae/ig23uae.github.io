@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СГУ Рассписание</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+      /*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+
+  </style>
+</head>
+<body class="bg-dark text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+              </nav>
+            </div>
+        </header>
+    </div>
+    <main class="container bg-light pt-5 mb-5" >
+        <!-- Рассписание на день -->
+        <div class="p-5 mt-5 text-start bg-white border rounded-3 row">
+          <div class="col-4">
+            <h1 class="display-3">21-Пи-1</h1>
+          </div>
+          <div class="col text-end">
+            <h2 class="display-6">Прикладная Информатика в экономике</h2>
+          </div>
+          <div class="accordion accordion-flush">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <h3 class="border-bottom">Фильтр</h3>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <h5 class="text-muted py-3">Неделя</h5>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Текущая неделя
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Обе недели
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Верхняя неделя
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Нижняя неделя
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <h5 class="text-muted py-3">Подгруппа</h5>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Все подугруппы
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Первая подгруппа
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Вторая подгруппа
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Третья подгруппа
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center mt-5">
+                    <button type="button" class="btn btn-lg btn-outline-dark">Применить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 mt-5 bg-white text-start border rounded-3">
+          <div class="container-fluid row">
+            <div class="col"><h1 class="display-5 fw-bold text-start">Понедельник</h1>
+              <h2 class="text-muted">29 Марта</h2>
+            </div>
+            <div class="col py-3">
+              <h2 class="text-end">Верхняя Неделя</h2>
+            </div>
+          </div>
+          <div class="container-fluid py-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"><h3>№ Пары</h3></th>
+                  <th scope="col"><h3>Предмет</h3></th>
+                  <th scope="col"><h3>Преподователь</h3></th>
+                  <th scope="col"><h3>Место</h3></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <h4>1 Пара</h4>
+                    <h5>8:00-9:30</h5>
+                  </th>
+                  <td>
+                    <h2>Математика</h2><h4 class="text-muted">Практика</h4>
+                  </td>
+                  <td>
+                    <h3>доц. Улитина Е.И.</h3>
+                  </td>
+                  <td>
+                    <h5>ул.Политехническая, 7, ауд. 308</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <h4>2 Пара</h4>
+                    <h5>9:40-11:10</h5>
+                  </th>
+                  <td>
+                    <h2>Математика</h2><h4 class="text-muted">Лекция</h4>
+                  </td>
+                  <td>
+                    <h3>доц. Улитина Е.И.</h3>
+                  </td>
+                  <td>
+                    <h5>ул.Политехническая, 7, ауд. 308</h5>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Рассписание на день -->
+        <div class="p-5 mt-5 bg-white text-start border rounded-3">
+          <h1 class="display-5 fw-bold text-start">Вторник</h1>
+          <h2 class="display-6 text-center">Экзамен</h2>
+          <div class="container-fluid py-5 text-center">
+            <h1 >Теория систем и системный анализ</h1>
+            <h2 class="display-6 text-muted">Видищева Е.В.</h2>
+            <h3 class="display-6 text-muted">11:00</h3>
+            <h4 class="display-6 text-muted">ул.Политехническая, 7, ауд. 313</h4>
+          </div>
+        </div>
+        <div class="p-5 mt-5 text-start border rounded-3">
+          <h1 class="display-5 fw-bold text-start">Среда</h1>
+          <div class="container-fluid py-5">
+            <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+          </div>
+        </div>
+        <div class="p-5 mt-5 text-start border rounded-3">
+          <h1 class="display-5 fw-bold text-start">Четверг</h1>
+          <div class="container-fluid py-5">
+            <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+          </div>
+        </div>
+        <div class="p-5 mt-5 text-start border rounded-3">
+          <h1 class="display-5 fw-bold text-start">Пятница</h1>
+          <div class="container-fluid py-5">
+            <h2 class="display-6 text-center">Рассписание будет позже...</h2>
+          </div>
+        </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>

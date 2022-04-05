@@ -1,9 +1,42 @@
-.denial-padding{
-    margin-top: -2px !important;
+.form-check-input:checked{
+    background-color: black;
+    border-color: black;
+}
+.accordion-button{
+    color: black !important;
+}
+.nav-link1{
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -.5rem;
+}
+.nav-link2{
+    display: block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
 }
 .card {
     margin-bottom: 20px;
     border: none;
+}
+.header-bar {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+.display-4 {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+}
+.navbar {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    display: block;
 }
 
 .box {
@@ -18,7 +51,6 @@
     border: 2px solid white;
     border-radius: 24px;
 }
-
 .box input[type="text"],
 .box input[type="password"] {
     border: 0;
@@ -40,8 +72,6 @@
     text-transform: uppercase;
     font-weight: 500
 }
-
-
 
 .box input[type="submit"] {
     border: 0;
