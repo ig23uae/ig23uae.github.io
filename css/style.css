@@ -16,17 +16,6 @@
       }
 
 }
-@media (min-width: 768px) {
-    .display-4 {
-      font-size: 3rem;
-    }
-    .display-5 {
-        font-size: 4rem;
-      }
-      .display-6 {
-        font-size: 5rem;
-      }
-}
 
 .bd-table {
     width: 75%;
