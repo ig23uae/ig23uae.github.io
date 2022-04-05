@@ -2,12 +2,14 @@
     /* *{
         background-color: red;
     } */
-    .bd-table {
+    *{
         overflow-x: hidden;
+    }
+    .bd-table {
         width: fit-content !important;
         position: relative;
         margin-right: 0;
-        margin-left: -3.5rem;
+        margin-left: -2.5rem;
         border-top-left-radius: .25rem;
         border-top-right-radius: .25rem;
     }
