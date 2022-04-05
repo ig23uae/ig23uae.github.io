@@ -2,11 +2,8 @@
     /* *{
         background-color: red;
     } */
-    body{
-        scale: 100%;
-    }
     .bd-table {
-        overflow: hidden;
+        overflow-x: hidden;
         width: fit-content !important;
         position: relative;
         margin-right: 0;
