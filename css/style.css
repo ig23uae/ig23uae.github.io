@@ -1,10 +1,10 @@
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1022px) {
     /* *{
         background-color: red;
     } */
     .bd-table {
         overflow-y: hidden;
-        width: fit-content;
+        width: fit-content !important;
         position: relative;
         margin-right: 0;
         margin-left: -3.5rem;
