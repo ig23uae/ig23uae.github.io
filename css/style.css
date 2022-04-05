@@ -1,4 +1,24 @@
-@media (min-width: 320px) and (max-width: 1022px) {
+@media (min-width: 320px) and (max-width: 374px) {
+    /* *{
+        background-color: red;
+    } */
+    *{
+        overflow-x: hidden;
+    }
+    .bd-table {
+        width: fit-content !important;
+        position: relative;
+        margin-right: 0;
+        margin-left: -2.5rem;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+    .display-5 {
+        font-size: 3rem;
+      }
+
+}
+@media (min-width: 375px) and (max-width: 768px) {
     /* *{
         background-color: red;
     } */
