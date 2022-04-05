@@ -1,22 +1,43 @@
-.form-check-input:checked{
-    background-color: black;
-    border-color: black;
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* *{
+        background-color: red;
+    } */
+    .bd-table {
+        overflow-y: hidden;
+        width: fit-content;
+        position: relative;
+        margin-right: 0;
+        margin-left: -3.5rem;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+    .display-5 {
+        font-size: 3rem;
+      }
+
 }
-.accordion-button{
-    color: black !important;
+@media (min-width: 768px) {
+    .bd-table{
+        width: 85%;
+    }
+    .display-4 {
+      font-size: 3rem;
+    }
+    .display-5 {
+        font-size: 4rem;
+      }
+      .display-6 {
+        font-size: 5rem;
+      }
 }
-.nav-link1{
-    display:block;
-    text-decoration: none;
-    text-align: center;
-    margin-top: -.5rem;
+
+.bd-table {
+    padding: 1rem;
+    border: solid #dee2e6;
+    border-width: 1px 0 0;
 }
-.nav-link2{
-    display: block;
-    text-decoration: none;
-    padding: .5rem 1rem;
-    text-align: center;
-}
+
 .card {
     margin-bottom: 20px;
     border: none;
@@ -25,17 +46,9 @@
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
 }
-.display-4 {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 768px) {
-    .display-4 {
-      font-size: 3rem;
-    }
-}
 .navbar {
     padding-bottom: 0 !important;
-    padding-top: 0 !important;
+    padding-top: 10px !important;
     display: block;
 }
 
