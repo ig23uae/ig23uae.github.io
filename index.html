@@ -28,7 +28,7 @@
 </script>
 <body class="bg-light">
   <header
-    class="container-fluid d-grid gap-3 text-center border-bottom bg-dark d-flex justify-content-center row py-2 mx-0 px-0"
+    class="container-fluid gap-3 text-center border-bottom bg-dark d-flex justify-content-center row py-2 mx-0 px-0"
     id="mobile-header">
     <div class="col-auto text-start align-self-start mx-0 px-0">
       <h2 class="text-white" style="font-weight: 200">
@@ -62,11 +62,11 @@
       <li><a href="#" class="nav-link px-2 text-muted">Экзамены</a></li>
       <li><a href="adm.html" class="nav-link px-2 text-muted">Вход</a></li>
     </ul>
-    <ul class="nav justify-content-center px-2">
+    <ul class="nav align-self-center px-2">
       <li><a href="#" class="pe-none nav-link px-2 text-white"><h6>Верхняя неделя</h6></a></li>
     </ul>
   </header>
-<main class="container-xxl align-items-center bg-light" >
+<main class=" align-items-center bg-light pt-5 mx-0 px-0">
   <!-- Рассписание на день -->
   <!-- <div class="p-5 mt-5 text-start bg-white border rounded-3 row">
     <div class="col text-start">
@@ -76,78 +76,47 @@
       <h2 class="display-4">Прикладная Информатика в экономике</h2>
     </div>
   </div> -->
-  <!-- <div class="p-5 mt-5 container-xxl bd-table bg-white text-center border rounded-3">
-    <div class="mx-3 text-start">
-      <h1 class="display-4 fw-bold text-start">Понедельник</h1>
-      <h2 class="text-muted">29 Марта</h2>
+  <div class="pt-5 mt-5 container bd-table bg-white text-center border rounded-3" id="hide-mt">
+    <div class="p-3 text-start">
+      <h1 class="display-4 fw-bold text-start">Вторник</h1>
     </div>
     <div class="py-3">
-      <div class="mx-3 mb-3 text-start">
-        <h3>1 Подгруппа</h3>
-      </div>
-      <div class="row">
-        <div class="col"><table class="table">
-          <thead>
-            <tr>
-              <th scope="col"><h4>№ Пары</h4></th>
-              <th scope="col"><h4>Предмет</р4></th>
-              <th scope="col"><h4>Преподователь</h4></th>
-              <th scope="col"><h4>Место</h4></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <h5>1 Пара</h5>
-                <h6>8:00-9:30</h6>
-              </th>
-              <td>
-                <h3>Математика</h3><h4 class="text-muted">Лекция</h4>
-              </td>
-              <td>
-                <h5>доц. Улитина Е.И.</h5>
-              </td>
-              <td>
-                <h5>ул.Политехническая, 7, ауд. 308</h5>
-              </td>
-            </tr>
-          </tbody>
-        </table></div>
-      </div>
-      <div class="mx-3 mb-3 text-start">
-        <h3>2 Подгруппа</h3>
-      </div>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col"><h4>№ Пары</h4></th>
-            <th scope="col"><h4>Предмет</р4></th>
-            <th scope="col"><h4>Преподователь</h4></th>
-            <th scope="col"><h4>Место</h4></th>
+            <th scope="col">
+              <h4 class="text-start">№ Пары</h4>
+            </th>
+            <th scope="col">
+              <h4 class="text-start">Предмет</р4>
+            </th>
+            <th scope="col">
+              <h4 class="text-start">Подгруппа</р4>
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">
-              <h5>2 Пара</h5>
+              <h5>1 Пара</h5>
               <h6>8:00-9:30</h6>
             </th>
             <td>
-              <h3>Математика</h3><h4 class="text-muted">Практика</h4>
+              <h3 class="text-start">Математика</h3>
+              <h4 class="text-muted text-start">Лекция</h4>
+              <h5 class="text-start">доц. Улитина Е.И.</h5>
+              <h5 class="text-start">ул.Политехническая, 7, ауд. 308</h5>
             </td>
             <td>
-              <h5>доц. Улитина Е.И.</h5>
-            </td>
-            <td>
-              <h5>ул.Политехническая, 7, ауд. 308</h5>
+              <h3 class="text-start">1 Подгруппа</h3>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  </div> -->
+  </div>
   <!-- Рассписание на день -->
-  <!-- <div class="p-5 mt-5 container-xxl bd-table bg-white text-center border rounded-3">
+  <!-- <div class="p-5 mt-5 container bd-table bg-white text-center border rounded-3">
     <div class="row">
       <div class="col mx-3 text-start">
         <h1 class="display-4 fw-bold text-start">Вторник</h1>
@@ -168,10 +137,15 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col"><h4>№ Пары</h4></th>
-            <th scope="col"><h4>Предмет</р4></th>
-            <th scope="col"><h4>Преподователь</h4></th>
-            <th scope="col"><h4>Место</h4></th>
+            <th scope="col">
+              <h4 class="text-start">№ Пары</h4>
+            </th>
+            <th scope="col">
+              <h4 class="text-start">Предмет</р4>
+            </th>
+            <th scope="col">
+              <h4 class="text-start">Подгруппа</р4>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -181,35 +155,20 @@
               <h6>8:00-9:30</h6>
             </th>
             <td>
-              <h3>Дискретная математика</h3><h4 class="text-muted">Лекция</h4>
+              <h3 class="text-start">Математика</h3>
+              <h4 class="text-muted text-start">Лекция</h4>
+              <h5 class="text-start">доц. Улитина Е.И.</h5>
+              <h5 class="text-start">ул.Политехническая, 7, ауд. 308</h5>
             </td>
             <td>
-              <h5>доц. Улитина Е.И.</h5>
-            </td>
-            <td>
-              <h5>ул.Политехническая, 7, ауд. 308</h5>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <h5>2 Пара</h5>
-              <h6>8:00-9:30</h6>
-            </th>
-            <td>
-              <h3>Дискретная математика</h3><h4 class="text-muted">Практика</h4>
-            </td>
-            <td>
-              <h5>доц. Улитина Е.И.</h5>
-            </td>
-            <td>
-              <h5>ул.Политехническая, 7, ауд. 308</h5>
+              <h3 class="text-start">1 Подгруппа</h3>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  </div> -->
-  <!-- <div class="p-5 mt-5 container-xxl bd-table bg-white text-center border rounded-3">
+  </div>
+  <div class="p-5 mt-5 container-xxl bd-table bg-white text-center border rounded-3">
     <div class="mx-3">
       <h1 class="display-4 fw-bold text-start">Среда</h1>
     </div>
@@ -220,16 +179,16 @@
       <h5 class="display-4 text-muted">Видищева Е.В.</h2>
       <h5 class="display-4 text-muted">ул.Политехническая, 7, ауд. 313</h4>
     </div>
-  </div> -->
-  <!-- <div class="p-5 mt-5 container-xxl bd-table text-start border rounded-3">
+  </div>
+  <div class="p-5 mt-5 container-xxl bd-table text-start border rounded-3">
     <div class="mx-3">
       <h1 class="display-4 fw-bold text-start">Четверг</h1>
     </div>
     <div class="container-fluid py-5">
       <h2 class="display-4 text-center">Рассписание будет позже...</h2>
     </div>
-  </div> -->
-  <!-- <div class="p-5 mt-5 container-xxl bd-table text-center border rounded-3">
+  </div>
+  <div class="p-5 mt-5 container-xxl bd-table text-center border rounded-3">
     <div class="mx-3">
       <h1 class="display-4 fw-bold text-start">Пятница</h1>
     </div>

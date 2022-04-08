@@ -1,14 +1,14 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 319px) and (max-width: 767px) {
     /* *{
         background-color: red;
     } */
     .bd-table {
         width: fit-content !important;
-        position: relative;
-        margin-right: 0;
-        margin-left: -2.5rem;
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        padding: 0!important;
+        border-top-left-radius: .25rem!important;
+        border-top-right-radius: .25rem!important;
     }
     .display-5 {
         font-size: 3rem;
@@ -19,6 +19,17 @@
     #mobile-header{
         display: flex !important;
     }
+    #hide-mt{
+        margin-top: 0 !important;
+    }
+    table{
+        width:fit-content !important;
+    }
+    h1{
+        font-size: 2rem !important;
+        font-weight: 100 !important;
+    }
+
 
 }
 @media screen and (min-width: 768px){
