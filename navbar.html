@@ -10,130 +10,59 @@
   <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-      /*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-.cover-container {
-  max-width: 42em;
-}
-
-
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
-}
-
-
-  </style>
 </head>
 <body class="bg-dark text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-              </nav>
-            </div>
-        </header>
+  <header
+  class="container-fluid gap-3 text-center border-bottom bg-dark d-flex justify-content justify-content-md-between row py-2 mx-0 px-0"
+  id="mobile-header">
+  <div class="col gx-4 text-start align-self-start mx-2 px-2">
+    <h5 class="text-white" style="font-weight: 200">
+      <script>document.write(today_m);</script>
+    </h5>
+  </div>
+  <div class="col gx-4 text-white text-center align-self-center px-0">
+    <h4 style="font-weight: 300">21-Пи-1</h4>
+  </div>
+  <div class="col gx-4 mx-4 px-0 text-end align-self-end">
+    <div class="flex-shrink-0 dropdown">
+      <a href="#" class="d-block link-light text-decoration-none " id="dropdownUser2" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <h3><i class="bi bi-justify text-white"></i></h3>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Занятия</a></li>
+        <li><a class="dropdown-item text-muted" href="#">Экзамены</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item text-muted" href="#">Вход</a></li>
+      </ul>
     </div>
+  </div>
+</header>
+<!--pc header-->
+<div class="container-fluid bg-dark " id="pc-header">
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+      <a href="/"
+        class="d-flex nav-link pe-none align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+        <h6 class="">21-Пи-1</h6>
+      </a>
+
+      <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="index.html" class="nav-link link-dark">Занятия</a></li>
+        <li class="bg-light"><a href="navbar.html" class="nav-link px-2 text-muted">Экзамены</a></li>
+        <li><a href="adm.html" class="nav-link text-muted">Вход</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="#" class="pe-none nav-link px-2 text-white">
+          <h6>Верхняя неделя</h6>
+        </a>
+      </div>
+    </header>
+  </div>
+</div>
     <main class="container bg-light pt-5 mb-5" >
         <!-- Рассписание на день -->
         <div class="p-5 mt-5 text-start bg-white border rounded-3 row">

@@ -14,14 +14,60 @@
 </head>
 
 <body class=" bg-light">
-  <main>
-    <header class="d-flex justify-content-center bg-dark">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="index.html" class="nav-link text-light" aria-current="page">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Экзамены</a></li>
-        <li class="nav-item bg-light"><a href="adm.html" class="nav-link link-dark">Вход</a></li>
+  <header
+  class="container-fluid gap-3 text-center border-bottom bg-dark d-flex justify-content justify-content-md-between row py-2 mx-0 px-0"
+  id="mobile-header">
+  <div class="col gx-4 text-start align-self-start mx-2 px-2">
+    <h5 class="text-white" style="font-weight: 200">
+      <script>document.write(today_m);</script>
+    </h5>
+  </div>
+  <div class="col gx-4 text-white text-center align-self-center px-0">
+    <h4 style="font-weight: 300">21-Пи-1</h4>
+  </div>
+  <div class="col gx-4 mx-4 px-0 text-end align-self-end">
+    <div class="flex-shrink-0 dropdown">
+      <a href="#" class="d-block link-light text-decoration-none " id="dropdownUser2" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <h3><i class="bi bi-justify text-white"></i></h3>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Занятия</a></li>
+        <li><a class="dropdown-item text-muted" href="#">Экзамены</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item text-muted" href="#">Вход</a></li>
       </ul>
+    </div>
+  </div>
+</header>
+<!--pc header-->
+<div class="container-fluid bg-dark " id="pc-header">
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+      <a href="/"
+        class="d-flex nav-link pe-none align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+        <h6 class="">21-Пи-1</h6>
+      </a>
+
+      <ul class="nav col-12 col-md-auto justify-content-center">
+        <li><a href="index.html" class="text-center nav-link text-muted">Занятия</a></li>
+        <li><a href="navbar.html" class="text-center nav-link text-muted ">Экзамены</a></li>
+        <li class="bg-light">
+          <h6><a href="adm.html" class="text-center nav-link link-dark">Вход</a></h6>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="#" class="pe-none nav-link px-2 text-white">
+          <h6>Верхняя неделя</h6>
+        </a>
+      </div>
     </header>
+  </div>
+</div>
+  <main>
     <div class="row">
       <div class="col">
         <div class="card align-items-center">

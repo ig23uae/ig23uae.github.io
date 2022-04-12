@@ -1,9 +1,10 @@
-@media screen and (min-width: 319px) and (max-width: 767px) {
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
     /* *{
         background-color: red;
     } */
     .bd-table {
-        width: fit-content !important;
+        /* width: fit-content !important; */
         margin-right: 0rem;
         margin-left: 0rem;
         padding: 0!important;
@@ -21,9 +22,7 @@
     }
     #hide-mt{
         margin-top: 0 !important;
-    }
-    table{
-        width:fit-content !important;
+
     }
     h1{
         font-size: 2rem !important;
@@ -42,7 +41,6 @@
 }
 .bd-table {
     width: 75%;
-    padding: 1rem;
     border: solid #dee2e6;
     border-width: 1px 0 0;
 }

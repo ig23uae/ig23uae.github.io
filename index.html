@@ -26,23 +26,36 @@
   monthA = 'Января,Февраля,Марта,Апреля,Мая,Июня,Июля,Авуста,Сентября,Октября,Ноября,Декабря'.split(','); 
   today = day + ' ' + monthA[d.getMonth()];
 </script>
+<script>
+  var today_m = new Date();
+  var dd_m = String(today_m.getDate()).padStart(2, '0');
+  d_m = new Date();
+  if (parseInt(dd_m) < 10) {
+    var day_m = dd_m.replace('0', '');
+  } else{
+    var day_m = dd_m;
+  }
+  monthA_m = '01,02,03,04,05,06,07,08,09,10,11,12'.split(','); 
+  today_m = day_m + ' / ' + monthA_m[d_m.getMonth()];
+</script>
 <body class="bg-light">
+  <!--mobile header-->
   <header
-    class="container-fluid gap-3 text-center border-bottom bg-dark d-flex justify-content-center row py-2 mx-0 px-0"
+    class="container-fluid gap-3 text-center border-bottom bg-dark d-flex justify-content justify-content-md-between row py-2 mx-0 px-0"
     id="mobile-header">
-    <div class="col-auto text-start align-self-start mx-0 px-0">
-      <h2 class="text-white" style="font-weight: 200">
-        <script>document.write(today);</script>
-      </h2>
+    <div class="col gx-4 text-start align-self-start mx-2 px-2">
+      <h5 class="text-white" style="font-weight: 200">
+        <script>document.write(today_m);</script>
+      </h5>
     </div>
-    <div class="col-auto text-white text-center align-self-center mx-0 px-4">
-      <h2 style="font-weight: 300">21-Пи-1</h2>
+    <div class="col gx-4 text-white text-center align-self-center px-0">
+      <h4 style="font-weight: 300">21-Пи-1</h4>
     </div>
-    <div class="col-auto mx-0 px-0 text-end align-self-end">
+    <div class="col gx-4 mx-4 px-0 text-end align-self-end">
       <div class="flex-shrink-0 dropdown">
         <a href="#" class="d-block link-light text-decoration-none " id="dropdownUser2" data-bs-toggle="dropdown"
           aria-expanded="false">
-          <h2><i class="bi bi-justify text-white"></i></h2>
+          <h3><i class="bi bi-justify text-white"></i></h3>
         </a>
         <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
           <li><a class="dropdown-item" href="#">Занятия</a></li>
@@ -55,66 +68,74 @@
       </div>
     </div>
   </header>
-  <header class="navbar justify-content-center fixed-top bg-dark d-flex nowrap" id="pc-header">
-    <ul class="nav justify-content-center">
-      <li class="px-2"><a href="#" class="pe-none nav-link text-white"><h6>21-Пи-1</h6></a></li>
-      <li class="bg-light"><a href="index.html" class="nav-link link-dark"><h6>Занятия</h6></a></li>
-      <li><a href="#" class="nav-link px-2 text-muted">Экзамены</a></li>
-      <li><a href="adm.html" class="nav-link px-2 text-muted">Вход</a></li>
-    </ul>
-    <ul class="nav align-self-center px-2">
-      <li><a href="#" class="pe-none nav-link px-2 text-white"><h6>Верхняя неделя</h6></a></li>
-    </ul>
-  </header>
-<main class=" align-items-center bg-light pt-5 mx-0 px-0">
+  <!--pc header-->
+  <div class="container-fluid bg-dark " id="pc-header">
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+        <a href="/"
+          class="d-flex nav-link pe-none align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+          <h6 class="">21-Пи-1</h6>
+        </a>
+  
+        <ul class="nav col-12 col-md-auto justify-content-center">
+          <li class="bg-light"><a href="index.html" class="nav-link link-dark">
+              <h6>Занятия</h6>
+            </a></li>
+          <li><a href="navbar.html" class="nav-link px-2 text-muted">Экзамены</a></li>
+          <li><a href="adm.html" class="nav-link text-muted">Вход</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <a href="#" class="pe-none nav-link px-2 text-white">
+            <h6>Верхняя неделя</h6>
+          </a>
+        </div>
+      </header>
+    </div>
+  </div>
+<main class="d-flex justify-content-between bg-light pt-5 mx-0 px-0">
   <!-- Рассписание на день -->
-  <!-- <div class="p-5 mt-5 text-start bg-white border rounded-3 row">
-    <div class="col text-start">
-      <h1 class="display-3">21-Пи-1</h1>
-    </div>
-    <div class="col text-end">
-      <h2 class="display-4">Прикладная Информатика в экономике</h2>
-    </div>
-  </div> -->
-  <div class="pt-5 mt-5 container bd-table bg-white text-center border rounded-3" id="hide-mt">
-    <div class="p-3 text-start">
-      <h1 class="display-4 fw-bold text-start">Вторник</h1>
-    </div>
-    <div class="py-3">
+  <div class="container pt-5 mt-5 bg-white border rounded-3 " id="hide-mt">
+    <div class="container">
+      <div class="p-3 text-start">
+        <h1 class="display-4 fw-bold text-start">Вторник</h1>
+      </div>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">
+            <th scope="col-2">
               <h4 class="text-start">№ Пары</h4>
             </th>
-            <th scope="col">
+            <th scope="col-8">
               <h4 class="text-start">Предмет</р4>
             </th>
-            <th scope="col">
-              <h4 class="text-start">Подгруппа</р4>
-            </th>
+  
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">
-              <h5>1 Пара</h5>
-              <h6>8:00-9:30</h6>
+              <h5 class="text-start">1 Пара</h5>
+              <h6 class="text-start">8:00-9:30</h6>
+              <br>
+              <h4 class="text-start" style="font-weight: 200;">1 подгруппа</h4>
             </th>
             <td>
               <h3 class="text-start">Математика</h3>
               <h4 class="text-muted text-start">Лекция</h4>
               <h5 class="text-start">доц. Улитина Е.И.</h5>
-              <h5 class="text-start">ул.Политехническая, 7, ауд. 308</h5>
-            </td>
-            <td>
-              <h3 class="text-start">1 Подгруппа</h3>
+              <h6 class="text-start">Политехническая, 7</h6>
+              <h6 class="text-start">ауд. 308</h6>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+
+  <!-- <div class="pt-5 mt-5 container border bg-white text-center " >
+ 
+  </div> -->
   <!-- Рассписание на день -->
   <!-- <div class="p-5 mt-5 container bd-table bg-white text-center border rounded-3">
     <div class="row">
